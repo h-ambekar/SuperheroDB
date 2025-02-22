@@ -8,3 +8,109 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+     /* Navbar */
+    .navbar {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    }
+
+    .navbar-brand img {
+    height: 40px;
+    }
+
+    .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+    color: #ffd700;
+    }
+
+    /* Page Layout */
+    body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 20px;
+    }
+
+    .container-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer */
+    footer {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 10px;
+    }
+    .character-image img {
+    height: 250px; /* Adjust to a reasonable size */
+    object-fit: cover; /* Ensures uniform size */
+    width: 100%; /* Ensures it takes full width of container */
+    border-radius: 8px;
+}
+ .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination a {
+    color: white;
+    background: #3498db;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.pagination .current {
+    font-weight: bold;
+    background: #2980b9;
+}
+.pagination .disabled {
+    color: #7f8c8d;
+    background: #ecf0f1;
+}
+.pagination .previous,
+.pagination .next {
+    background: #3498db;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.pagination .previous a,
+.pagination .next a {
+    color: white;
+}
+.pagination .previous.disabled,
+.pagination .next.disabled {
+    background: #ecf0f1;
+}
+.pagination .previous a,
+.pagination .next a {
+    color: white;
+}
+.pagination .previous a:hover,
+.pagination .next a:hover {
+    background: #2980b9;
+}
+.pagination .previous.disabled a,
+.pagination .next.disabled a {
+    color: #7f8c8d;
+}
+.pagination .previous.disabled a:hover,
+.pagination .next.disabled a:hover {
+    background: #ecf0f1;
+}
