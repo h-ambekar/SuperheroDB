@@ -1,6 +1,15 @@
 require "httparty"
 
 class Character < ApplicationRecord
+  has_many :films, dependent: :destroy
+  has_many :tv_shows, dependent: :destroy
+  has_many :video_games, dependent: :destroy
+  has_many :likeds, dependent: :destroy
+  has_many :users, through: :likeds
+
+  validates :name, presence: true, uniqueness: true
+  validates :image_url, presence: true
+
   def self.fetch_superheroes
     token = ENV["SUPERHERO_API_KEY"]
     if token.nil?

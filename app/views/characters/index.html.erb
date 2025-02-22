@@ -1,0 +1,33 @@
+<% provide(:title, "Superheroes") %>
+
+<h1 class="text-center">Superhero Database</h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <%= form_with url: characters_path, method: :get, local: true do |form| %>
+      <%= form.text_field :search, placeholder: "Search superheroes...", class: "form-control" %>
+    <% end %>
+  </div>
+  <div class="col-md-6">
+    <%= form_with url: characters_path, method: :get, local: true do |form| %>
+      <%= form.select :publisher, ["Marvel Comics", "DC Comics"], prompt: "Filter by Publisher", class: "form-select" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <% @characters.each do |character| %>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="<%= character.image_url %>" class="card-img-top" alt="<%= character.name %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= character.name %></h5>
+          <p class="card-text"><strong>Publisher:</strong> <%= character.publisher %></p>
+          <a href="<%= character_path(character) %>" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= paginate @characters %>

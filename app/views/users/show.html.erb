@@ -1,0 +1,13 @@
+<% provide(:title, @user.name) %>
+
+<h1><%= @user.name %></h1>
+<p>Email: <%= @user.email %></p>
+
+<h2>Liked Superheroes</h2>
+<ul>
+  <% @user.characters.each do |character| %>
+    <li>
+      <a href="<%= character_path(character) %>"><%= character.name %></a>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,33 @@
+<% provide(:title, @character.name) %>
+
+<div class="card mb-3">
+  <img src="<%= @character.image_url %>" class="card-img-top" alt="<%= @character.name %>">
+  <div class="card-body">
+    <h2><%= @character.name %></h2>
+    <p><strong>Full Name:</strong> <%= @character.full_name %></p>
+    <p><strong>Publisher:</strong> <%= @character.publisher %></p>
+    <p><strong>Alignment:</strong> <%= @character.alignment.capitalize %></p>
+    <p><strong>First Appearance:</strong> <%= @character.first_appearance %></p>
+  </div>
+</div>
+
+<h3>Films</h3>
+<ul>
+  <% @character.films.each do |film| %>
+    <li><%= film.name %></li>
+  <% end %>
+</ul>
+
+<h3>TV Shows</h3>
+<ul>
+  <% @character.tv_shows.each do |show| %>
+    <li><%= show.name %></li>
+  <% end %>
+</ul>
+
+<h3>Video Games</h3>
+<ul>
+  <% @character.video_games.each do |game| %>
+    <li><%= game.name %></li>
+  <% end %>
+</ul>
