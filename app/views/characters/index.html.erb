@@ -4,9 +4,11 @@
 
 <div class="row">
   <div class="col-md-6">
-    <%= form_with url: characters_path, method: :get, local: true do |form| %>
-      <%= form.text_field :search, placeholder: "Search superheroes...", class: "form-control" %>
+    <%= form_with url: superheroes_path, method: :get, local: true do |form| %>
+    <%= form.text_field :search, placeholder: "Search superheroes...", class: "form-control" %>
+    <%= form.submit "🔍 Search", class: "btn btn-primary" %>
     <% end %>
+
   </div>
   <div class="col-md-6">
     <%= form_with url: characters_path, method: :get, local: true do |form| %>
