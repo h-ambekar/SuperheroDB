@@ -1,9 +1,5 @@
 class CharactersController < ApplicationController
   def index
-    @characters = Character.all
-  end
-
-  def show
-    @character = Character.find(params[:id])
+    @characters = Character.page(params[:page]).per(50)
   end
 end

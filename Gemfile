@@ -18,7 +18,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "faker"
 gem "httparty"
-
+gem "json"
+gem "kaminari"
 gem "rails-erd"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
@@ -65,3 +66,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "kaminari", "~> 1.2"
