@@ -56,12 +56,30 @@
     border-radius: 10px;
     }
     .character-image img {
-    height: 250px; /* Adjust to a reasonable size */
+    height: 200px; /* Adjust to a reasonable size */
     object-fit: cover; /* Ensures uniform size */
     width: 100%; /* Ensures it takes full width of container */
     border-radius: 8px;
 }
- .pagination {
+.logo-image img {
+    height: 60px; /* Adjust to a reasonable size */
+    object-fit: cover; /* Ensures uniform size */
+    width: auto; /* Ensures it takes full width of container */
+    border-radius: 8px;
+}
+
+/* Search */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.search-container select, .search-container input {
+    padding: 8px;
+    border-radius: 5px;
+}
+/* Pagination */
+.pagination {
     display: flex;
     justify-content: center;
     margin-top: 20px;

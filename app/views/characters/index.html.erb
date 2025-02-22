@@ -14,6 +14,17 @@
     <% end %>
   </div>
 </div>
+<div class="search-container">
+  <%= form_with url: superheroes_path, method: :get, local: true do |form| %>
+    <%= form.text_field :search, placeholder: "Search superheroes...", class: "form-control" %>
+    <%= form.submit "Search", class: "btn btn-primary" %>
+  <% end %>
+
+  <%= form_with url: superheroes_path, method: :get, local: true do |form| %>
+    <%= form.select :publisher, options_for_select(["All", "Marvel Comics", "DC Comics"]), prompt: "Filter by Publisher", class: "form-control" %>
+    <%= form.submit "Filter", class: "btn btn-secondary" %>
+  <% end %>
+</div>
 
 <div class="row mt-4">
   <% @characters.each do |character| %>
