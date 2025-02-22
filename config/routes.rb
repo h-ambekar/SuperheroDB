@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "pages/about"
+  get "about/index"
   root "characters#index" # Home page
   resources :characters, only: [ :index, :show ]
   get "/superheroes", to: "characters#index"

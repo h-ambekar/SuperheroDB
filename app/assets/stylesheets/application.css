@@ -16,12 +16,14 @@ body {
 .navbar {
     background: linear-gradient(90deg, #2c3e50, #4ca1af);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 5x;
+    padding: 10px 10px;
 }
 
 .navbar-brand img {
     height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .navbar-nav .nav-link {
@@ -35,30 +37,47 @@ body {
 }
 
 /* =========================== */
-/*       Page Layout           */
+/*       Hero Section          */
 /* =========================== */
 
-.container-content {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-    background: white;
+.hero {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.hero img {
+    max-width: 300px;
+    height: auto;
 }
 
 /* =========================== */
-/*         Footer              */
+/*        Search & Filters     */
 /* =========================== */
 
-footer {
-    margin-top: 20px;
-    padding: 15px;
-    text-align: center;
-    background-color: #2c3e50;
-    color: white;
-    border-radius: 10px;
-    font-size: 0.9rem;
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-input-group input,
+.filter-input-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 250px;
+}
+
+.button-group .btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* =========================== */
@@ -73,67 +92,12 @@ footer {
     text-align: center;
 }
 
-.character-image img {
-    height: 180px; /* Adjust to a reasonable size */
-    object-fit: cover; /* Ensures uniform size */
-    width: 100%; /* Ensures it takes full width of container */
+.character-image {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
     border-radius: 8px;
-}
-
-.character-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.btn-view {
-    background-color: #3498db;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 15px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.btn-view:hover {
-    background-color: #2980b9;
-}
-
-/* =========================== */
-/*        Search & Filters     */
-/* =========================== */
-
-.search-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.search-container input,
-.search-container select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #d1d1d1;
-    font-size: 1rem;
-    outline: none;
-}
-
-.btn-search {
-    color: white;
-    background-color: #3498db;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-}
-
-.btn-search:hover {
-    background-color: #2980b9;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* =========================== */
@@ -148,8 +112,7 @@ footer {
 }
 
 .pagination a, 
-.pagination .current, 
-.pagination .disabled {
+.pagination .current {
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
@@ -167,17 +130,6 @@ footer {
     background: #2980b9;
 }
 
-.pagination .current {
-    background: #2980b9;
-    color: white;
-}
-
-.pagination .disabled {
-    color: #7f8c8d;
-    background: #ecf0f1;
-    pointer-events: none;
-}
-
 /* =========================== */
 /*       Responsive Design     */
 /* =========================== */
@@ -189,7 +141,7 @@ footer {
         align-items: center;
     }
 
-    .character-image img {
+    .character-image {
         height: 180px;
     }
 
