@@ -3,18 +3,6 @@
 <h1 class="text-center">Superhero Database</h1>
 
 <div class="row">
-  <div class="col-md-6">
-    <%= form_with url: superheroes_path, method: :get, local: true do |form| %>
-    <%= form.text_field :search, placeholder: "Search superheroes...", class: "form-control" %>
-    <%= form.submit "🔍 Search", class: "btn btn-primary" %>
-    <% end %>
-
-  </div>
-  <div class="col-md-6">
-    <%= form_with url: characters_path, method: :get, local: true do |form| %>
-      <%= form.select :publisher, ["Marvel Comics", "DC Comics"], prompt: "Filter by Publisher", class: "form-select" %>
-    <% end %>
-  </div>
 </div>
 <div class="search-container">
   <%= form_with url: superheroes_path, method: :get, local: true do |form| %>
