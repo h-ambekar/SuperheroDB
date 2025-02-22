@@ -19,7 +19,6 @@ gem "jbuilder"
 gem "faker"
 gem "httparty"
 gem "json"
-gem "kaminari"
 gem "rails-erd"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
