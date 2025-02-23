@@ -149,3 +149,56 @@ body {
         flex-wrap: wrap;
     }
 }
+/* ============================= */
+/*      Character Show Page      */
+/* ============================= */
+.character-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Character Image */
+.character-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Styled Cards for Films, TV Shows, and Games */
+.film-card, .tvshow-card, .game-card {
+    border: none;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.film-card:hover, .tvshow-card:hover, .game-card:hover {
+    transform: scale(1.05);
+}
+
+.film-card .card-body, 
+.tvshow-card .card-body, 
+.game-card .card-body {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
