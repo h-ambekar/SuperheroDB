@@ -202,3 +202,33 @@ body {
     font-weight: bold;
     font-size: 1.1rem;
 }
+/* =========================== */
+/*       Related Media        */
+/* =========================== */
+
+.media-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.list-group-item {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item i {
+    margin-right: 8px;
+}
+
+/* Add hover effect */
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transition: background 0.3s ease;
+}

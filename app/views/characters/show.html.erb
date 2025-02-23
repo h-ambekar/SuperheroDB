@@ -21,84 +21,69 @@
     </div>
   </div>
 
-  <!-- Related Media -->
+  <!-- Related Media Section -->
   <div class="related-media mt-4">
     <div class="row">
+      
+      <!-- Films Section -->
       <div class="col-md-4">
-        <h3 class="text-secondary">Films</h3>
-        <ul class="list-group">
-          <% if @character.films.any? %>
-            <% @character.films.each do |film| %>
-              <li class="list-group-item"><%= film.name %></li>
+        <h3 class="text-secondary"><i class="fas fa-film"></i> Films</h3>
+        <div class="card media-card">
+          <ul class="list-group list-group-flush">
+            <% if @character.films.any? %>
+              <% @character.films.each do |film| %>
+                <li class="list-group-item">
+                  <i class="fas fa-video text-primary"></i> <%= film.name %>
+                </li>
+              <% end %>
+            <% else %>
+              <li class="list-group-item text-muted">No films available</li>
             <% end %>
-          <% else %>
-            <li class="list-group-item text-muted">No films available</li>
-          <% end %>
-        </ul>
+          </ul>
+        </div>
       </div>
 
+      <!-- TV Shows Section -->
       <div class="col-md-4">
-        <h3 class="text-secondary">TV Shows</h3>
-        <ul class="list-group">
-          <% if @character.tv_shows.any? %>
-            <% @character.tv_shows.each do |show| %>
-              <li class="list-group-item"><%= show.name %></li>
+        <h3 class="text-secondary"><i class="fas fa-tv"></i> TV Shows</h3>
+        <div class="card media-card">
+          <ul class="list-group list-group-flush">
+            <% if @character.tv_shows.any? %>
+              <% @character.tv_shows.each do |show| %>
+                <li class="list-group-item">
+                  <i class="fas fa-tv text-success"></i> <%= show.name %>
+                </li>
+              <% end %>
+            <% else %>
+              <li class="list-group-item text-muted">No TV shows available</li>
             <% end %>
-          <% else %>
-            <li class="list-group-item text-muted">No TV shows available</li>
-          <% end %>
-        </ul>
+          </ul>
+        </div>
       </div>
 
+      <!-- Video Games Section -->
       <div class="col-md-4">
-        <h3 class="text-secondary">Video Games</h3>
-        <ul class="list-group">
-          <% if @character.video_games.any? %>
-            <% @character.video_games.each do |game| %>
-              <li class="list-group-item"><%= game.name %></li>
+        <h3 class="text-secondary"><i class="fas fa-gamepad"></i> Video Games</h3>
+        <div class="card media-card">
+          <ul class="list-group list-group-flush">
+            <% if @character.video_games.any? %>
+              <% @character.video_games.each do |game| %>
+                <li class="list-group-item">
+                  <i class="fas fa-gamepad text-danger"></i> <%= game.name %>
+                </li>
+              <% end %>
+            <% else %>
+              <li class="list-group-item text-muted">No video games available</li>
             <% end %>
-          <% else %>
-            <li class="list-group-item text-muted">No video games available</li>
-          <% end %>
-        </ul>
+          </ul>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- Back Button -->
   <div class="mt-4">
-    <a href="<%= characters_path %>" class="btn btn-secondary">Back to Superheroes</a>
+    <a href="<%= characters_path %>" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Superheroes</a>
   </div>
 </div>
-<footer class="footer mt-5 py-3">
-  <div class="container text-center">
-    <div class="row">
-      <!-- Footer Links -->
-      <div class="col-md-6">
-        <ul class="footer-links list-inline">
-          <li class="list-inline-item"><a href="<%= root_path %>">Home</a></li>
-          <li class="list-inline-item"><a href="<%= characters_path %>">Superheroes</a></li>
-          <li class="list-inline-item"><a href="<%= about_path %>">About</a></li>
-          <li class="list-inline-item"><a href="<%= users_path %>">Users</a></li>
-        </ul>
-      </div>
-
-      <!-- Social Icons -->
-      <div class="col-md-6">
-        <ul class="social-icons list-inline">
-          <li class="list-inline-item">
-            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="mt-3">&copy; <%= Time.current.year %> Superhero Database. All Rights Reserved.</p>
-  </div>
-</footer>

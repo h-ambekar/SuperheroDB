@@ -1,0 +1,83 @@
+[33mcommit 74dcca4d974e522891f30331859e12984566c0c2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sun Feb 23 11:07:45 2025 -0600
+
+    Adding footer to pages link to github and linkedin
+
+[33mcommit 4356fce984d986a4d475e8705d4fcd5cb5af0244[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 13:20:58 2025 -0600
+
+    Add About and Pages controllers with corresponding views and routes; integrate Bootstrap 5.3.3
+
+[33mcommit 3d6caf0d3868cb65d1a94b7aec1c773e6cc08814[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 11:04:24 2025 -0600
+
+    Added a designed about page
+
+[33mcommit e747bfbd6c6f1cf2c83a7637c081664e0ac21c8d[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 10:45:02 2025 -0600
+
+    Refined CSS: Improved layout, search, pagination, and responsiveness
+
+[33mcommit ee396ea4b80fa02df1fe7b74ab5fc2cade1579cd[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 10:38:10 2025 -0600
+
+    Update search form to use superheroes path and add search button
+
+[33mcommit b209c29f8851be5dfecffac7cf421fb67b4efb7f[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 10:36:51 2025 -0600
+
+    Enhance character index page with search and filter functionality; update styles for improved layout
+
+[33mcommit 94a64c85b63f8e90a9dbc42da54fe142640fa79b[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 10:25:23 2025 -0600
+
+    Added Allication.css for styled pagination for cleaner look
+
+[33mcommit 3b84ae159b794b058f8a4d794ff1da7b959322ef[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 10:17:48 2025 -0600
+
+    Adjusted superhero image sizes for better UI
+
+[33mcommit d8cc3a0a2263be1dcc58d5afbd214dcdb582be6c[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 09:57:05 2025 -0600
+
+    Add pagination to characters index and update routes for resourceful routing
+
+[33mcommit 64c42d1dfbe5b9141524b263f431fba2420a1e96[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 09:50:11 2025 -0600
+
+    Add CharactersController with index and show actions; update routes for character views
+
+[33mcommit 7028b051ffd8ee5c33e7c8b5249bfc1d9e977ef4[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 09:45:05 2025 -0600
+
+    Update routes to set root path to characters#index and add about page
+
+[33mcommit b4d558f23ea360749a79361999b218c24d6a6d98[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Sat Feb 22 09:43:57 2025 -0600
+
+    Add character and user models with associations and validations; enhance application layout and views
+
+[33mcommit 7325988ebb37bf9b84e797bf7151634b1e10897a[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Fri Feb 21 17:41:09 2025 -0600
+
+    Add superhero fetching and seeding functionality with API integration
+
+[33mcommit fa8e766f559e640d68c6392e7e86b278139289df[m
+Author: Harsh Ambekar <hambekar@academic.rrc.ca>
+Date:   Fri Feb 21 17:08:25 2025 -0600
+
+    Initialize application structure and add essential files
