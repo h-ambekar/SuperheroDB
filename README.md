@@ -87,13 +87,13 @@ SuperheroDB/
 
 ## **🖼️ Screenshots**
 ### **🏠 Homepage**
-![Homepage](https://your-image-url/homepage.png)
+![Homepage](https://raw.githubusercontent.com/h-ambekar/SuperheroDB/main/public/homepage.png)
 
 ### **🦸 Superhero Profile**
-![Character Show Page](https://your-image-url/character-show.png)
+![Homepage](https://raw.githubusercontent.com/h-ambekar/SuperheroDB/main/public/character-show.png)
 
 ### **🔍 Search & Filtering**
-![Search Filter](https://your-image-url/search-filter.png)
+![Homepage](https://raw.githubusercontent.com/h-ambekar/SuperheroDB/main/public/search-filter.png)
 
 ---
 
@@ -113,7 +113,7 @@ Feel free to contribute and improve this project! 🚀
 
 ## **📬 Contact**
 👤 **Harsh Ambekar**  
-📧 [Email](mailto:your-email@example.com)  
+📧 [Email](mailto:ambekar.ca@gmail.com)  
 🔗 [GitHub](https://github.com/h-ambekar/SuperheroDB)
 
 ---
