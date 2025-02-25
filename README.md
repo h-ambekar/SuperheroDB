@@ -9,7 +9,6 @@ A **Ruby on Rails** application that allows users to explore a vast collection o
 | 🦸 **Superhero Profiles** | Displays names, images, origins, and affiliations of superheroes. |
 | 🎬 **Movie & TV Show Info** | Links superheroes to their appearances in movies and TV shows. |
 | 🔍 **Search & Filtering** | Allows users to search for heroes and filter results by publisher. |
-| ❤️ **Like & Save** *(Coming Soon!)* | Users can "like" superheroes and save their favorites. |
 | 📜 **Pagination** | Ensures smooth browsing of a large dataset. |
 
 ---
@@ -18,7 +17,7 @@ A **Ruby on Rails** application that allows users to explore a vast collection o
 This project collects **superhero information** from multiple sources:
 1. **Superhero API** – Provides superhero data (names, images, affiliations).
 2. **Faker Gem** – Generates **fake data** for additional details.
-3. **CSV File (Upcoming Feature)** – Potentially used for importing **additional** character information.
+3. **CSV File** – Potentially used for importing **additional** character information.
 
 ---
 
@@ -105,11 +104,6 @@ SuperheroDB/
 
 ---
 
-## **📝 License**
-This project is licensed under the **MIT License**.  
-Feel free to contribute and improve this project! 🚀
-
----
 
 ## **📬 Contact**
 👤 **Harsh Ambekar**  
