@@ -22,14 +22,14 @@
       }
 
       .about-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         color: #2c3e50;
         font-weight: bold;
         margin-bottom: 20px;
       }
 
       .section-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: #333;
         font-weight: bold;
         margin-top: 30px;
@@ -38,9 +38,9 @@
 
       .about-description,
       .schema-description {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #555;
-        line-height: 1.6;
+        line-height: 1.8;
         margin-bottom: 20px;
       }
 
@@ -48,6 +48,7 @@
         list-style-type: disc;
         margin-left: 20px;
         color: #333;
+        font-size: 1.2rem;
       }
 
       .data-sources li {
@@ -65,7 +66,7 @@
       }
 
       .custom-table th, .custom-table td {
-        padding: 12px 15px;
+        padding: 15px;
         text-align: left;
         border-bottom: 1px solid #ddd;
       }
@@ -74,6 +75,7 @@
         background-color: #3498db;
         color: white;
         font-weight: 600;
+        font-size: 1.3rem;
       }
 
       .custom-table tbody tr:nth-of-type(odd) {
@@ -97,11 +99,11 @@
     <div class="about-container">
       <h1 class="about-title">About the Superhero Database</h1>
       <p class="about-description">
-        Welcome to the **Superhero Database**, a project designed to showcase an extensive collection of **Marvel and DC superheroes**.
-        This application provides a structured way to **explore heroes, movies, TV shows, and games** while implementing features like search, filtering, and pagination.
+        Welcome to the <strong>Superhero Database</strong>, a project designed to provide an extensive collection of <strong>Marvel and DC superheroes</strong>.
+        This web application implements advanced features such as <strong>search, filtering, and pagination</strong> to ensure seamless browsing.
       </p>
 
-      <h2 class="section-title">Project Features</h2>
+      <h2 class="section-title">Implemented Features</h2>
       <table class="custom-table">
         <thead>
           <tr>
@@ -112,42 +114,45 @@
         <tbody>
           <tr>
             <td>Superhero Profiles</td>
-            <td>Displays names, images, origins, and affiliations of superheroes.</td>
+            <td>Displays superheroes with details like name, image, origin, and affiliations.</td>
           </tr>
           <tr>
             <td>Movie & TV Show Info</td>
-            <td>Links superheroes to their appearances in movies and TV shows.</td>
+            <td>Links superheroes to their respective appearances in movies and TV shows.</td>
           </tr>
           <tr>
             <td>Search & Filtering</td>
-            <td>Allows users to search for heroes and filter results by publisher.</td>
-          </tr>
-          <tr>
-            <td>Like & Save</td>
-            <td>Users can "like" superheroes and save their favorites.</td>
+            <td>Allows users to search heroes and filter them based on their publishers (Marvel/DC).</td>
           </tr>
           <tr>
             <td>Pagination</td>
-            <td>Ensures smooth browsing of a large dataset.</td>
+            <td>Ensures optimized browsing across a large superhero dataset.</td>
           </tr>
         </tbody>
       </table>
 
-      <h2 class="section-title">Data Sources</h2>
+      <h2 class="section-title">Data Sources Used</h2>
       <p class="about-description">
-        The data in this project is collected from the **Superhero API**, combined with **Faker-generated users** and additional media sources.
+        This project gathers superhero data from a variety of sources to ensure accuracy and depth.
       </p>
       <ul class="data-sources">
-        <li>Superhero API - Fetches superhero data</li>
-        <li>Faker Gem - Generates random user data</li>
-        <li>Custom Movie, TV Show, and Game Data</li>
+        <li><strong>Superhero API</strong> - Fetches superhero details including abilities, affiliations, and origins.</li>
+        <li><strong>Faker Gem</strong> - Generates random user data to simulate interactions.</li>
+        <li><strong>Custom Movie, TV Show, and Game Data</strong> - Enriches the database with additional media-related information.</li>
       </ul>
 
-      <h2 class="section-title">Database Schema</h2>
+      <h2 class="section-title">Database Schema Overview</h2>
       <p class="schema-description">
-        The database is structured using **ActiveRecord** models with appropriate associations.
+        The database follows a well-structured relational model using <strong>ActiveRecord</strong> associations to efficiently link superheroes to movies, TV shows, and video games.
       </p>
-      
+
+      <h2 class="section-title">Entity-Relationship Diagram (ERD)</h2>
+      <p class="schema-description">
+        The ERD below visualizes the relationships between the different models in this database.
+      </p>
+      <div class="erd-image">
+        <img src="<%= asset_path('erd_diagram.png') %>" alt="ERD Diagram">
+      </div>
     </div>
   </body>
 </html>

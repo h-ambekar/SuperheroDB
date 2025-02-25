@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_21_230413) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_25_013325) do
   create_table "characters", force: :cascade do |t|
     t.string "name"
     t.string "image_url"
@@ -39,6 +39,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_21_230413) do
     t.index ["user_id"], name: "index_likeds_on_user_id"
   end
 
+  create_table "likes", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "character_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_likes_on_character_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
   create_table "tv_shows", force: :cascade do |t|
     t.string "name"
     t.integer "character_id", null: false
@@ -65,6 +74,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_21_230413) do
   add_foreign_key "films", "characters"
   add_foreign_key "likeds", "characters"
   add_foreign_key "likeds", "users"
+  add_foreign_key "likes", "characters"
+  add_foreign_key "likes", "users"
   add_foreign_key "tv_shows", "characters"
   add_foreign_key "video_games", "characters"
 end
