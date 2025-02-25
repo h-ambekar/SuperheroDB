@@ -80,6 +80,32 @@ body {
     font-weight: bold;
 }
 
+/* Style the dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  /* Make dropdown options alternate in color */
+  select option:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  select option:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  
+  /* Highlight options on hover */
+  select option:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
 /* =========================== */
 /*       Character Cards       */
 /* =========================== */
