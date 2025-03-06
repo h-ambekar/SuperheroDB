@@ -11,7 +11,7 @@
       </div>
       
       <div class="filter-input-group me-2">
-        <%= form.select :publisher, options_for_select(["All"] + Character.distinct.pluck(:publisher)), {}, class: "form-control" %>
+        <%= form.select :publisher, options_for_select([["All", ""]] + Character.distinct.pluck(:publisher).reject(&:blank?).map { |p| [p, p] }), {}, class: "form-control" %>
       </div>
 
       <div class="button-group">
